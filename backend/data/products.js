@@ -73,4 +73,40 @@ const products = [
   },
 ];
 
+// export default products;
+
+// import { faker } from "@faker-js/faker";
+// // Generate fake products
+// const generateFakeProduct = () => {
+//   return {
+//     name: faker.commerce.productName(),
+//     image: faker.image.urlLoremFlickr({
+//       category: "Electronics",
+//       width: 240,
+//       height: 120,
+//     }),
+//     description: faker.commerce.productDescription(),
+//     brand: faker.company.name(),
+//     category: "Electronics",
+//     price: parseFloat(faker.commerce.price({ min: 100, max: 200 })),
+//     countInStock: faker.number.int({ min: 1, max: 100 }),
+//     rating: parseFloat(faker.number.int({ min: 1, max: 5 })),
+//     numReviews: faker.number.int({ min: 1, max: 50 }),
+//   };
+// };
+
+// // Generate an array of fake products
+// const generateFakeProducts = (numProducts) => {
+//   const products = [];
+//   for (let i = 0; i < numProducts; i++) {
+//     products.push(generateFakeProduct());
+//   }
+//   return products;
+// };
+
+// // Example usage: generate 10 fake products
+// const products = generateFakeProducts(40);
+
+// console.log(products);
+
 export default products;
