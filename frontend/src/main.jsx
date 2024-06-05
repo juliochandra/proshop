@@ -12,6 +12,7 @@ import "./index.css";
 import HomeScreen from "./layouts/HomeScreen.jsx";
 import ProductScreen from "./layouts/ProductScreen.jsx";
 import CartScreen from "./layouts/CartScreen.jsx";
+import LoginScreen from "./layouts/LoginScreen.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <CartScreen />,
+      },
+      {
+        path: "/login",
+        element: <LoginScreen />,
       },
     ],
   },

@@ -1,14 +1,11 @@
 import express from "express";
 const router = express.Router();
-import Products from "../models/productModel.js";
-import asyncHandler from "../middleware/asyncHandler.js";
 import {
   getProducts,
   getProductById,
 } from "../controllers/productController.js";
 
+router.route("/").get(getProducts);
 
-router.get("/", asyncHandler(getProducts));
-
-router.get("/:id", asyncHandler(getProductById));
+router.route("/:id").get(getProductById);
 export default router;
